@@ -19,7 +19,6 @@ public class ProcessHandlerApi {
         getAllProcesses();
 
         printProcessesThatHaveChildren();
-
     }
 
     private static void getPidOfCurrentProcess() throws IOException {

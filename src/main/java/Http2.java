@@ -21,8 +21,8 @@ public class Http2 {
     }
 
     private static void simpleBlockingSynchronousHttpClient() throws IOException, InterruptedException, URISyntaxException {
-        HttpResponse response = HttpRequest.create(
-                new URI("https://github.com/joeyfaherty"))
+        HttpResponse response = HttpRequest
+                .create(new URI("https://github.com/joeyfaherty"))
                 // specify the method type
                 .GET()
                 // send the request. This blocks, until the response
@@ -34,8 +34,8 @@ public class Http2 {
     }
 
     private static void aSynchronousHttpClient() throws URISyntaxException, InterruptedException, ExecutionException {
-        CompletableFuture<HttpResponse> future = HttpRequest.create(
-                new URI("https://github.com/joeyfaherty"))
+        CompletableFuture<HttpResponse> future = HttpRequest
+                .create(new URI("https://github.com/joeyfaherty"))
                 .GET()
                 // this returns a CompletableFutureApi
                 .responseAsync();

@@ -7,9 +7,6 @@ import java.net.URI;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-/**
- * Created by joey on 11/5/16.
- */
 public class Http2 {
 
     public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException, ExecutionException {
